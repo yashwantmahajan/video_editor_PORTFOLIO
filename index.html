@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Yashwant W. Mahajan — Cinematic Video Editor specializing in storytelling, color grading, and high-impact edits using DaVinci Resolve & CapCut.">
+    <meta name="keywords"
+        content="video editor, cinematic editing, color grading, DaVinci Resolve, CapCut, video portfolio">
+    <meta name="author" content="Yashwant Walmik Mahajan">
+    <title>YASHWANT W. MAHAJAN | Cinematic Video Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- ==================== LOADER ==================== -->
+    <div id="cinematic-loader" class="loader">
+        <div class="loader-inner">
+            <div class="loader-lens-flare"></div>
+            <div class="loader-filmstrip">
+                <div class="filmstrip-frame"></div>
+                <div class="filmstrip-frame"></div>
+                <div class="filmstrip-frame"></div>
+                <div class="filmstrip-frame"></div>
+                <div class="filmstrip-frame"></div>
+            </div>
+            <div class="loader-text">
+                <span class="loader-letter" style="--i:0">Y</span>
+                <span class="loader-letter" style="--i:1">A</span>
+                <span class="loader-letter" style="--i:2">S</span>
+                <span class="loader-letter" style="--i:3">H</span>
+                <span class="loader-letter" style="--i:4">W</span>
+                <span class="loader-letter" style="--i:5">A</span>
+                <span class="loader-letter" style="--i:6">N</span>
+                <span class="loader-letter" style="--i:7">T</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+            <p class="loader-tagline">Loading Cinematic Experience...</p>
+        </div>
+    </div>
+
+    <!-- ==================== FILM GRAIN OVERLAY ==================== -->
+    <div class="film-grain"></div>
+
+    <!-- ==================== PARTICLES ==================== -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="main-nav" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-y">Y</span><span class="logo-rest">ASHWANT</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-index="01">Home</a></li>
+                <li><a href="#about" class="nav-link" data-index="02">About</a></li>
+                <li><a href="#skills" class="nav-link" data-index="03">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link" data-index="04">Portfolio</a></li>
+                <li><a href="#showreel" class="nav-link" data-index="05">Showreel</a></li>
+                <li><a href="#testimonials" class="nav-link" data-index="06">Reviews</a></li>
+                <li><a href="#contact" class="nav-link nav-link-cta" data-index="07">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-gradient-overlay"></div>
+            <div class="hero-animated-gradient"></div>
+            <div class="hero-vignette"></div>
+            <div class="hero-anamorphic-flare"></div>
+            <div class="hero-light-streaks">
+                <div class="light-streak streak-1"></div>
+                <div class="light-streak streak-2"></div>
+                <div class="light-streak streak-3"></div>
+                <div class="light-streak streak-4"></div>
+                <div class="light-streak streak-5"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge reveal-element">
+                <span class="badge-dot"></span>
+                <span>Available for Projects</span>
+            </div>
+            <h1 class="hero-title">
+                <div class="title-line-wrapper reveal-element">
+                    <span class="title-line title-line-1">Cinematic</span>
+                </div>
+                <div class="title-line-wrapper reveal-element" style="--delay: 0.15s">
+                    <span class="title-line title-line-2">Video <span class="title-accent">Editor</span></span>
+                </div>
+            </h1>
+            <div class="hero-divider reveal-element" style="--delay: 0.3s">
+                <span class="hero-divider-line"></span>
+                <span class="hero-divider-diamond"></span>
+                <span class="hero-divider-line"></span>
+            </div>
+            <p class="hero-subtitle reveal-element" style="--delay: 0.4s">Crafting Stories Through Visuals</p>
+            <p class="hero-intro reveal-element" style="--delay: 0.5s">I create high-quality cinematic edits using
+                <strong>DaVinci Resolve</strong> &amp; <strong>CapCut</strong>
+            </p>
+            <div class="hero-cta reveal-element" style="--delay: 0.6s">
+                <a href="#portfolio" class="btn btn-primary" id="cta-view-work">
+                    <span class="btn-bg"></span>
+                    <span class="btn-text">View My Work</span>
+                    <span class="btn-icon"><i class="fas fa-play"></i></span>
+                </a>
+                <a href="#contact" class="btn btn-secondary" id="cta-contact">
+                    <span class="btn-text">Contact Me</span>
+                    <span class="btn-icon"><i class="fas fa-envelope"></i></span>
+                </a>
+            </div>
+            <div class="hero-scroll-indicator reveal-element" style="--delay: 0.8s">
+                <div class="scroll-line-wrapper">
+                    <div class="scroll-line"></div>
+                </div>
+                <span>Scroll</span>
+            </div>
+        </div>
+        <!-- Side decorative elements -->
+        <div class="hero-side-text hero-side-left">VIDEO EDITOR • COLORIST • STORYTELLER</div>
+        <div class="hero-side-text hero-side-right">EST. 2024</div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="about-section section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-number">01</div>
+                <span class="section-label">Get To Know Me</span>
+                <h2 class="section-title">About <span class="text-accent">Me</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-diamond"></span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-image-wrapper" data-animate="fade-right">
+                    <div class="about-image-frame">
+                        <img src="Yashwant.jpeg" alt="Yashwant W. Mahajan — Cinematic Video Editor" class="about-image"
+                            loading="lazy">
+                        <div class="about-image-scanline"></div>
+                        <div class="about-image-border"></div>
+                    </div>
+                    <div class="about-image-glow"></div>
+                    <div class="about-image-badge">
+                        <i class="fas fa-video"></i>
+                        <span>Video Editor</span>
+                    </div>
+                    <div class="about-image-corner about-corner-tl"></div>
+                    <div class="about-image-corner about-corner-br"></div>
+                </div>
+                <div class="about-text-wrapper" data-animate="fade-left">
+                    <div class="about-eyebrow">WHO I AM</div>
+                    <h3 class="about-name">YASHWANT <span class="text-accent">W. MAHAJAN</span></h3>
+                    <p class="about-description">
+                        I am a passionate <strong>Video Editor</strong> and <strong>Computer Engineering
+                            student</strong>.
+                        I specialize in cinematic storytelling, color grading, and high-impact edits.
+                        I have worked on <strong>20+ projects</strong> and delivered quality results to <strong>6+ happy
+                            clients</strong>.
+                    </p>
+                    <div class="about-counters">
+                        <div class="counter-card">
+                            <div class="counter-top">
+                                <div class="counter-number" data-target="20">0</div>
+                                <div class="counter-plus">+</div>
+                            </div>
+                            <div class="counter-label">Projects Completed</div>
+                        </div>
+                        <div class="counter-card">
+                            <div class="counter-top">
+                                <div class="counter-number" data-target="6">0</div>
+                                <div class="counter-plus">+</div>
+                            </div>
+                            <div class="counter-label">Happy Clients</div>
+                        </div>
+                        <div class="counter-card counter-tools">
+                            <div class="counter-icon"><i class="fas fa-tools"></i></div>
+                            <div class="counter-label">DaVinci Resolve & CapCut</div>
+                        </div>
+                    </div>
+                    <a href="#portfolio" class="btn btn-primary about-cta">
+                        <span class="btn-bg"></span>
+                        <span class="btn-text">See My Projects</span>
+                        <span class="btn-icon"><i class="fas fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="skills-section section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-number">02</div>
+                <span class="section-label">What I Bring</span>
+                <h2 class="section-title">Skills &amp; <span class="text-accent">Expertise</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-diamond"></span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="skills-content">
+                <div class="skills-grid" data-animate="fade-up">
+                    <div class="skill-card" style="--card-delay: 0s">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon"><i class="fas fa-film"></i></div>
+                        <h3 class="skill-name">Cinematic Editing</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-width="95"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-card" style="--card-delay: 0.1s">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                        <h3 class="skill-name">Color Grading</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-width="90"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-card" style="--card-delay: 0.2s">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon"><i class="fas fa-book-open"></i></div>
+                        <h3 class="skill-name">Storytelling</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-width="88"></div>
+                        </div>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-card" style="--card-delay: 0.3s">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                        <h3 class="skill-name">Transitions &amp; Effects</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-width="92"></div>
+                        </div>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-card" style="--card-delay: 0.4s">
+                        <div class="skill-card-glow"></div>
+                        <div class="skill-icon"><i class="fas fa-music"></i></div>
+                        <h3 class="skill-name">Sound Design</h3>
+                        <div class="skill-bar">
+                            <div class="skill-bar-fill" data-width="85"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+                <div class="tools-section" data-animate="fade-up">
+                    <h3 class="tools-title">My <span class="text-accent">Tools</span></h3>
+                    <div class="tools-grid">
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4 class="tool-name">DaVinci Resolve</h4>
+                            <span class="tool-level tool-expert">Expert</span>
+                            <div class="tool-bar">
+                                <div class="tool-bar-fill" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="tool-card">
+                            <div class="tool-icon">
+                                <i class="fas fa-scissors"></i>
+                            </div>
+                            <h4 class="tool-name">CapCut</h4>
+                            <span class="tool-level tool-advanced">Advanced</span>
+                            <div class="tool-bar">
+                                <div class="tool-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PORTFOLIO SECTION ==================== -->
+    <section id="portfolio" class="portfolio-section section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-number">03</div>
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Featured <span class="text-accent">Projects</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-diamond"></span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="portfolio-filters" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+                <button class="filter-btn" data-filter="reels">Reels</button>
+                <button class="filter-btn" data-filter="short-films">Short Films</button>
+            </div>
+            <div class="portfolio-grid" data-animate="fade-up">
+                <!-- Project 1: Hackathon -->
+                <div class="project-card" data-category="cinematic">
+                    <div class="project-thumbnail">
+                        <video src="Sample edit/Hackthon shot edit.mp4" muted preload="metadata"
+                            class="project-video-thumb"></video>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category-tag">Cinematic</span>
+                                <h3 class="project-overlay-title">Hackathon Shot Edit</h3>
+                                <p class="project-overlay-desc">Cinematic highlights from a thrilling hackathon
+                                    event</p>
+                                <button class="project-play-btn"
+                                    data-video="Sample edit/Hackthon shot edit.mp4"
+                                    data-title="Hackathon Shot Edit" aria-label="Play Hackathon Shot Edit">
+                                    <i class="fas fa-play"></i>
+                                    <span>Watch</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-film-border"></div>
+                    </div>
+                </div>
+                <!-- Project 2: Haldi -->
+                <div class="project-card" data-category="cinematic">
+                    <div class="project-thumbnail">
+                        <video src="Sample edit/Haldi shot edit.mp4" muted preload="metadata"
+                            class="project-video-thumb"></video>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category-tag">Cinematic</span>
+                                <h3 class="project-overlay-title">Haldi Ceremony Edit</h3>
+                                <p class="project-overlay-desc">Vibrant colors, emotions, and celebrations</p>
+                                <button class="project-play-btn"
+                                    data-video="Sample edit/Haldi shot edit.mp4"
+                                    data-title="Haldi Ceremony Edit" aria-label="Play Haldi Ceremony Edit">
+                                    <i class="fas fa-play"></i>
+                                    <span>Watch</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-film-border"></div>
+                    </div>
+                </div>
+                <!-- Project 3: Marriage -->
+                <div class="project-card card-large" data-category="short-films">
+                    <div class="project-thumbnail">
+                        <video src="Sample edit/Marrage shot Edit.mp4" muted preload="metadata"
+                            class="project-video-thumb"></video>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category-tag">Short Film</span>
+                                <h3 class="project-overlay-title">Wedding Film Edit</h3>
+                                <p class="project-overlay-desc">A heartfelt wedding film capturing every moment</p>
+                                <button class="project-play-btn"
+                                    data-video="Sample edit/Marrage shot Edit.mp4"
+                                    data-title="Wedding Film Edit" aria-label="Play Wedding Film Edit">
+                                    <i class="fas fa-play"></i>
+                                    <span>Watch</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-film-border"></div>
+                    </div>
+                </div>
+                <!-- Project 4: Trending -->
+                <div class="project-card" data-category="reels">
+                    <div class="project-thumbnail">
+                        <video src="Sample edit/Trending Edit.mp4" muted preload="metadata"
+                            class="project-video-thumb"></video>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category-tag">Reels</span>
+                                <h3 class="project-overlay-title">Trending Reels Edit</h3>
+                                <p class="project-overlay-desc">Attention-grabbing edits for social media</p>
+                                <button class="project-play-btn"
+                                    data-video="Sample edit/Trending Edit.mp4"
+                                    data-title="Trending Reels Edit" aria-label="Play Trending Reels Edit">
+                                    <i class="fas fa-play"></i>
+                                    <span>Watch</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-film-border"></div>
+                    </div>
+                </div>
+                <!-- Project 5: Color Grading -->
+                <div class="project-card" data-category="cinematic">
+                    <div class="project-thumbnail">
+                        <video src="Sample edit/color grading Edit.mp4" muted preload="metadata"
+                            class="project-video-thumb"></video>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category-tag">Cinematic</span>
+                                <h3 class="project-overlay-title">Color Grading Showcase</h3>
+                                <p class="project-overlay-desc">Transforming raw footage into visual art</p>
+                                <button class="project-play-btn"
+                                    data-video="Sample edit/color grading Edit.mp4"
+                                    data-title="Color Grading Showcase" aria-label="Play Color Grading Showcase">
+                                    <i class="fas fa-play"></i>
+                                    <span>Watch</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-film-border"></div>
+                    </div>
+                </div>
+                <!-- Project 6: Seminar -->
+                <div class="project-card card-large" data-category="short-films">
+                    <div class="project-thumbnail">
+                        <video src="Sample edit/seminar Shot edit.mp4" muted preload="metadata"
+                            class="project-video-thumb"></video>
+                        <div class="project-overlay">
+                            <div class="project-overlay-content">
+                                <span class="project-category-tag">Short Film</span>
+                                <h3 class="project-overlay-title">Seminar Event Edit</h3>
+                                <p class="project-overlay-desc">Dynamic event coverage with professional editing</p>
+                                <button class="project-play-btn"
+                                    data-video="Sample edit/seminar Shot edit.mp4"
+                                    data-title="Seminar Event Edit" aria-label="Play Seminar Event Edit">
+                                    <i class="fas fa-play"></i>
+                                    <span>Watch</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-film-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== VIDEO MODAL ==================== -->
+    <div id="video-modal" class="video-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close" aria-label="Close video modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h3 class="modal-title" id="modal-title"></h3>
+            <video id="modal-video" class="modal-video" controls></video>
+        </div>
+    </div>
+
+    <!-- ==================== SHOWREEL SECTION ==================== -->
+    <section id="showreel" class="showreel-section section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-number">04</div>
+                <span class="section-label">Best of My Work</span>
+                <h2 class="section-title">My <span class="text-accent">Showreel</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-diamond"></span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="showreel-content" data-animate="fade-up">
+                <div class="showreel-player">
+                    <div class="showreel-frame">
+                        <video id="showreel-video" class="showreel-video" controls poster="">
+                            <source src="Sample edit/Marrage shot Edit.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="showreel-play-overlay" id="showreel-play-overlay">
+                            <div class="showreel-play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <p class="showreel-play-text">Play Showreel</p>
+                        </div>
+                        <div class="showreel-corner showreel-corner-tl"></div>
+                        <div class="showreel-corner showreel-corner-tr"></div>
+                        <div class="showreel-corner showreel-corner-bl"></div>
+                        <div class="showreel-corner showreel-corner-br"></div>
+                    </div>
+                    <div class="showreel-info">
+                        <h3>Cinematic Highlights</h3>
+                        <p>A curated selection of my best cinematic edits — color grading, transitions, and storytelling
+                            at its finest.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section id="testimonials" class="testimonials-section section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-number">05</div>
+                <span class="section-label">What Clients Say</span>
+                <h2 class="section-title">Client <span class="text-accent">Reviews</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-diamond"></span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="testimonials-carousel" data-animate="fade-up">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-mark">"</div>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Yashwant transformed our raw footage into a cinematic masterpiece.
+                            His attention to detail and creative vision are unmatched. Highly recommend!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>RS</span></div>
+                            <div>
+                                <h4 class="author-name">Rahul Sharma</h4>
+                                <span class="author-role">Wedding Client</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-mark">"</div>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">The color grading work was absolutely stunning. Every frame looked
+                            like it belongs in a Hollywood film. Exceeded all expectations!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>PP</span></div>
+                            <div>
+                                <h4 class="author-name">Priya Patel</h4>
+                                <span class="author-role">Content Creator</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-mark">"</div>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">Working with Yashwant was a game-changer for our event coverage. He
+                            delivered a professional, polished video that captured every moment perfectly.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>AD</span></div>
+                            <div>
+                                <h4 class="author-name">Amit Deshmukh</h4>
+                                <span class="author-role">Event Organizer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-mark">"</div>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Our social media engagement skyrocketed after Yashwant edited our
+                            reels. The transitions and pacing were perfect for capturing attention!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>SK</span></div>
+                            <div>
+                                <h4 class="author-name">Sneha Kulkarni</h4>
+                                <span class="author-role">Social Media Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-mark">"</div>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">Yashwant's storytelling through editing is incredible. He turned
+                            our hackathon footage into an inspiring story that motivated our entire team.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>VJ</span></div>
+                            <div>
+                                <h4 class="author-name">Vikram Joshi</h4>
+                                <span class="author-role">Tech Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote-mark">"</div>
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">Professional, creative, and always on time. Yashwant's editing
+                            skills brought our seminar highlight reel to the next level. Would work with him again!</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><span>MR</span></div>
+                            <div>
+                                <h4 class="author-name">Dr. Meera Rao</h4>
+                                <span class="author-role">Seminar Host</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-prev" id="carousel-prev"
+                        aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+                    <div class="carousel-dots" id="carousel-dots"></div>
+                    <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next testimonial"><i
+                            class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="contact-section section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-number">06</div>
+                <span class="section-label">Let's Work Together</span>
+                <h2 class="section-title">Get In <span class="text-accent">Touch</span></h2>
+                <div class="section-divider">
+                    <span class="divider-line"></span>
+                    <span class="divider-diamond"></span>
+                    <span class="divider-line"></span>
+                </div>
+            </div>
+            <div class="contact-content" data-animate="fade-up">
+                <div class="contact-info">
+                    <h3>Let's Create Something <span class="text-accent">Cinematic</span></h3>
+                    <p>Have a project in mind? I'd love to hear about it. Drop me a message and let's bring your vision
+                        to life.</p>
+                    <div class="contact-details">
+                        <a href="https://wa.me/918554826448" target="_blank" rel="noopener" class="contact-detail-item"
+                            id="contact-phone">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+91 8554826448</span>
+                        </a>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://instagram.com/yashwant__84" target="_blank" rel="noopener" class="social-link"
+                            id="social-instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-link"
+                            id="social-youtube" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yashwant-mahajan-161219319" target="_blank" rel="noopener"
+                            class="social-link" id="social-linkedin" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/918554826448" target="_blank" rel="noopener" class="social-link"
+                            id="social-whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Your Message</label>
+                        <textarea id="contact-message" name="message" rows="5"
+                            placeholder="Tell me about your project..." required></textarea>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit" id="form-submit">
+                        <span class="btn-bg"></span>
+                        <span class="btn-text">Send via WhatsApp</span>
+                        <span class="btn-icon"><i class="fab fa-whatsapp"></i></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">[</span>
+                    YASHWANT <span class="text-accent">W. MAHAJAN</span>
+                    <span class="logo-bracket">]</span>
+                </a>
+                <p class="footer-tagline">Cinematic Video Editor &bull; Crafting Stories Through Visuals</p>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="footer-copyright">&copy; 2026 Yashwant Walmik Mahajan. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
