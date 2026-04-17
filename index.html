@@ -96,43 +96,47 @@
             </div>
         </div>
         <div class="hero-content">
-            <div class="hero-badge reveal-element">
-                <span class="badge-dot"></span>
-                <span>Available for Projects</span>
-            </div>
-            <h1 class="hero-title">
-                <div class="title-line-wrapper reveal-element">
-                    <span class="title-line title-line-1">Cinematic</span>
+            <div class="hero-text-col">
+                <div class="hero-badge reveal-element">
+                    <span class="badge-dot"></span>
+                    <span>Available for Projects</span>
                 </div>
-                <div class="title-line-wrapper reveal-element" style="--delay: 0.15s">
-                    <span class="title-line title-line-2">Video <span class="title-accent">Editor</span></span>
+                <h1 class="hero-title">
+                    <div class="title-line-wrapper reveal-element">
+                        <span class="title-line title-line-1">Cinematic</span>
+                    </div>
+                    <div class="title-line-wrapper reveal-element" style="--delay: 0.15s">
+                        <span class="title-line title-line-2">Video <span class="title-accent">Editor</span></span>
+                    </div>
+                </h1>
+                <h2 class="hero-name-highlight reveal-element" style="--delay: 0.25s">Yashwant Mahajan</h2>
+                <div class="hero-divider-left reveal-element" style="--delay: 0.3s">
+                    <span class="hero-divider-line"></span>
                 </div>
-            </h1>
-            <div class="hero-divider reveal-element" style="--delay: 0.3s">
-                <span class="hero-divider-line"></span>
-                <span class="hero-divider-diamond"></span>
-                <span class="hero-divider-line"></span>
-            </div>
-            <p class="hero-subtitle reveal-element" style="--delay: 0.4s">Crafting Stories Through Visuals</p>
-            <p class="hero-intro reveal-element" style="--delay: 0.5s">I create high-quality cinematic edits using
-                <strong>DaVinci Resolve</strong> &amp; <strong>CapCut</strong>
-            </p>
-            <div class="hero-cta reveal-element" style="--delay: 0.6s">
-                <a href="#portfolio" class="btn btn-primary" id="cta-view-work">
-                    <span class="btn-bg"></span>
-                    <span class="btn-text">View My Work</span>
-                    <span class="btn-icon"><i class="fas fa-play"></i></span>
-                </a>
-                <a href="#contact" class="btn btn-secondary" id="cta-contact">
-                    <span class="btn-text">Contact Me</span>
-                    <span class="btn-icon"><i class="fas fa-envelope"></i></span>
-                </a>
-            </div>
-            <div class="hero-scroll-indicator reveal-element" style="--delay: 0.8s">
-                <div class="scroll-line-wrapper">
-                    <div class="scroll-line"></div>
+                <p class="hero-subtitle reveal-element" style="--delay: 0.4s">Crafting Stories Through Visuals</p>
+                <p class="hero-intro reveal-element" style="--delay: 0.5s">
+                    I create high-quality cinematic video edits using <strong>DaVinci Resolve</strong> &amp;
+                    <strong>CapCut</strong>.<br>
+                    Passionate about storytelling, color grading, and impactful visuals.
+                </p>
+                <div class="hero-cta hero-cta-left reveal-element" style="--delay: 0.6s">
+                    <a href="#portfolio" class="btn btn-primary" id="cta-view-work">
+                        <span class="btn-bg"></span>
+                        <span class="btn-text">View My Work</span>
+                        <span class="btn-icon"><i class="fas fa-play"></i></span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="cta-contact">
+                        <span class="btn-text">Contact Me</span>
+                        <span class="btn-icon"><i class="fas fa-envelope"></i></span>
+                    </a>
                 </div>
-                <span>Scroll</span>
+            </div>
+
+            <div class="hero-image-col reveal-element" style="--delay: 0.3s">
+                <div class="hero-image-wrapper">
+                    <img src="2nd.png" alt="Yashwant Mahajan" class="hero-profile-img">
+                    <div class="hero-image-glow"></div>
+                </div>
             </div>
         </div>
         <!-- Side decorative elements -->
@@ -330,8 +334,7 @@
                                 <h3 class="project-overlay-title">Hackathon Shot Edit</h3>
                                 <p class="project-overlay-desc">Cinematic highlights from a thrilling hackathon
                                     event</p>
-                                <button class="project-play-btn"
-                                    data-video="Sample edit/Hackthon shot edit.mp4"
+                                <button class="project-play-btn" data-video="Sample edit/Hackthon shot edit.mp4"
                                     data-title="Hackathon Shot Edit" aria-label="Play Hackathon Shot Edit">
                                     <i class="fas fa-play"></i>
                                     <span>Watch</span>
@@ -344,15 +347,17 @@
                 <!-- Project 2: Haldi -->
                 <div class="project-card" data-category="cinematic">
                     <div class="project-thumbnail">
-                        <video src="Sample edit/Haldi shot edit.mp4" muted preload="metadata"
-                            class="project-video-thumb"></video>
+                        <iframe
+                            src="https://youtube.com/embed/mMup3Nl_Eyg?autoplay=1&mute=1&controls=0&loop=1&playlist=mMup3Nl_Eyg"
+                            class="project-video-thumb" frameborder="0" allow="autoplay; encrypted-media" tabindex="-1"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="pointer-events: none;"></iframe>
                         <div class="project-overlay">
                             <div class="project-overlay-content">
                                 <span class="project-category-tag">Cinematic</span>
                                 <h3 class="project-overlay-title">Haldi Ceremony Edit</h3>
                                 <p class="project-overlay-desc">Vibrant colors, emotions, and celebrations</p>
-                                <button class="project-play-btn"
-                                    data-video="Sample edit/Haldi shot edit.mp4"
+                                <button class="project-play-btn" data-video="https://youtube.com/embed/mMup3Nl_Eyg"
                                     data-title="Haldi Ceremony Edit" aria-label="Play Haldi Ceremony Edit">
                                     <i class="fas fa-play"></i>
                                     <span>Watch</span>
@@ -365,15 +370,17 @@
                 <!-- Project 3: Marriage -->
                 <div class="project-card card-large" data-category="short-films">
                     <div class="project-thumbnail">
-                        <video src="Sample edit/Marrage shot Edit.mp4" muted preload="metadata"
-                            class="project-video-thumb"></video>
+                        <iframe
+                            src="https://www.youtube.com/embed/cO0e3nqrlGI?autoplay=1&mute=1&controls=0&loop=1&playlist=cO0e3nqrlGI"
+                            class="project-video-thumb" frameborder="0" allow="autoplay; encrypted-media" tabindex="-1"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="pointer-events: none;"></iframe>
                         <div class="project-overlay">
                             <div class="project-overlay-content">
                                 <span class="project-category-tag">Short Film</span>
                                 <h3 class="project-overlay-title">Wedding Film Edit</h3>
                                 <p class="project-overlay-desc">A heartfelt wedding film capturing every moment</p>
-                                <button class="project-play-btn"
-                                    data-video="Sample edit/Marrage shot Edit.mp4"
+                                <button class="project-play-btn" data-video="https://www.youtube.com/embed/cO0e3nqrlGI"
                                     data-title="Wedding Film Edit" aria-label="Play Wedding Film Edit">
                                     <i class="fas fa-play"></i>
                                     <span>Watch</span>
@@ -393,8 +400,7 @@
                                 <span class="project-category-tag">Reels</span>
                                 <h3 class="project-overlay-title">Trending Reels Edit</h3>
                                 <p class="project-overlay-desc">Attention-grabbing edits for social media</p>
-                                <button class="project-play-btn"
-                                    data-video="Sample edit/Trending Edit.mp4"
+                                <button class="project-play-btn" data-video="Sample edit/Trending Edit.mp4"
                                     data-title="Trending Reels Edit" aria-label="Play Trending Reels Edit">
                                     <i class="fas fa-play"></i>
                                     <span>Watch</span>
@@ -414,8 +420,7 @@
                                 <span class="project-category-tag">Cinematic</span>
                                 <h3 class="project-overlay-title">Color Grading Showcase</h3>
                                 <p class="project-overlay-desc">Transforming raw footage into visual art</p>
-                                <button class="project-play-btn"
-                                    data-video="Sample edit/color grading Edit.mp4"
+                                <button class="project-play-btn" data-video="Sample edit/color grading Edit.mp4"
                                     data-title="Color Grading Showcase" aria-label="Play Color Grading Showcase">
                                     <i class="fas fa-play"></i>
                                     <span>Watch</span>
@@ -428,15 +433,17 @@
                 <!-- Project 6: Seminar -->
                 <div class="project-card card-large" data-category="short-films">
                     <div class="project-thumbnail">
-                        <video src="Sample edit/seminar Shot edit.mp4" muted preload="metadata"
-                            class="project-video-thumb"></video>
+                        <iframe
+                            src="https://youtube.com/embed/L8B8P-o2kI8?autoplay=1&mute=1&controls=0&loop=1&playlist=L8B8P-o2kI8"
+                            class="project-video-thumb" frameborder="0" allow="autoplay; encrypted-media" tabindex="-1"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            style="pointer-events: none;"></iframe>
                         <div class="project-overlay">
                             <div class="project-overlay-content">
                                 <span class="project-category-tag">Short Film</span>
                                 <h3 class="project-overlay-title">Seminar Event Edit</h3>
                                 <p class="project-overlay-desc">Dynamic event coverage with professional editing</p>
-                                <button class="project-play-btn"
-                                    data-video="Sample edit/seminar Shot edit.mp4"
+                                <button class="project-play-btn" data-video="https://youtube.com/embed/L8B8P-o2kI8"
                                     data-title="Seminar Event Edit" aria-label="Play Seminar Event Edit">
                                     <i class="fas fa-play"></i>
                                     <span>Watch</span>
@@ -459,6 +466,9 @@
             </button>
             <h3 class="modal-title" id="modal-title"></h3>
             <video id="modal-video" class="modal-video" controls></video>
+            <iframe id="modal-iframe" class="modal-video" frameborder="0" allow="autoplay; encrypted-media"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen style="display: none;"></iframe>
         </div>
     </div>
 
@@ -478,10 +488,10 @@
             <div class="showreel-content" data-animate="fade-up">
                 <div class="showreel-player">
                     <div class="showreel-frame">
-                        <video id="showreel-video" class="showreel-video" controls poster="">
-                            <source src="Sample edit/Marrage shot Edit.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        <iframe id="showreel-iframe" src="https://www.youtube.com/embed/cO0e3nqrlGI"
+                            class="showreel-video" frameborder="0" allow="autoplay; encrypted-media"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
                         <div class="showreel-play-overlay" id="showreel-play-overlay">
                             <div class="showreel-play-btn">
                                 <i class="fas fa-play"></i>
@@ -616,8 +626,8 @@
                     </div>
                 </div>
                 <div class="carousel-controls">
-                    <button class="carousel-btn carousel-prev" id="carousel-prev"
-                        aria-label="Previous testimonial"><i class="fas fa-arrow-left"></i></button>
+                    <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Previous testimonial"><i
+                            class="fas fa-arrow-left"></i></button>
                     <div class="carousel-dots" id="carousel-dots"></div>
                     <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next testimonial"><i
                             class="fas fa-arrow-right"></i></button>
